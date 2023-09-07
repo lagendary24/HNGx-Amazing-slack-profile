@@ -1,0 +1,57 @@
+/* Apply general styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d7e2dc;
+    text-align: center;
+}
+
+/* Style the Slack Name heading */
+h1[data-testid="slackUserName"] {
+    color: #333;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+/* Style the Slack Display Image */
+img[data-testid="slackDisplayImage"] {
+    width: 120px;
+    height: 120px;
+    border-radius: 80%;
+    margin: 20px;
+}
+
+/* Style the Current Day of the Week and Current UTC Time paragraphs */
+p[data-testid="currentDayOfTheWeek"],
+p[data-testid="currentUTCTime"] {
+    font-size: 15px;
+    color: #120d0d;
+    margin: 10px;
+}
+
+/* Style the Track paragraph */
+p[data-testid="myTrack"] {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e2af62;
+    margin: 10px;
+}
+
+/* Style the GitHub URL link */
+a[data-testid="githubURL"] {
+    font-size: 16px;
+    color: #1f2225;
+    text-decoration: none;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid #e100ff;
+    padding: 11px 22px;
+    border-radius: 5px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+a[data-testid="githubURL"]:hover {
+    background-color: #a4c9f0;
+    color: #fff;
+}
