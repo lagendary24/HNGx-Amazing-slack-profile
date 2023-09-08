@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Update the elements with dynamic data
     currentDayElement.textContent = currentDayOfWeek;
-    currentUTCTimeElement.textContent = currentUTCTimeMillis + " milliseconds UTC";
+    currentUTCTimeElement.textContent = currentUTCTimeMillis + " (UTC)";
 });
