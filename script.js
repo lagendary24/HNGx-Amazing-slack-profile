@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentDate = new Date();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const currentDayOfWeek = daysOfWeek[currentDate.getUTCDay()];
+    const currentUTCTimeMillis = currentDate.getTime(); // Get time in milliseconds
 
     // Update the elements with dynamic data
-    currentDayElement.textContent = `Current Day: ${currentDayOfWeek}`;
-    currentUTCTimeElement.textContent = `Current UTC Time: ${currentDate.toUTCString()}`;
+    currentDayElement.textContent = `Current Day of the Week: ${currentDayOfWeek}`;
+    currentUTCTimeElement.textContent = `Current UTC Time: ${currentDate.toUTCString()} (${currentUTCTimeMillis} milliseconds)`;
 });
