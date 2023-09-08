@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Slack Profile</title>
-</head>
-<body>
-    <h1 data-testid="slackUserName">Amazing Chimezie</h1>
-    <img src="slack-profile-pic.jpg" alt="Amazing Chimezie" data-testid="slackDisplayImage">
-    <p data-testid="currentDayOfTheWeek"></p>
-    <p data-testid="currentUTCTime"></p>
-    <p data-testid="myTrack">Frontend</p>
-    <a href="https://github.com/lagendary24/Amazing-slack-profile" data-testid="githubURL">GitHub Repository</a>
+<html>
+    <head>
+      <title>Front-end Task 1</title>
+      <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
 
-    <script src="script.js"></script>
-</body>
+    <body>
+      <div class="view">
+        <h1 class="slack_name" data-testid="Amazing Chimezie">Amazing Chimezie</h1>
+        <img class="slack_image" src="slack-profile-pic.jpg" data-testid="slackDisplayImage"  
+             alt="Amazing Chimezie" max-width="100rem" height="200rem">
+        <h2 class="slack_day" data-testid="currentDayOfTheWeek">Friday</h2>
+        <h2 class="slack_time" data-testid="currentUTCTime" id="time"></h2>
+        <h2 class="slack_track" data-testid="myTrack">Front-end</h2>
+        <a class="source_code_link" href="https://github.com/lagendary24/Amazing-slack-profile" target="_blank"
+        data-testid="githubURL">Click this link to view source-code on Github</a>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+
 </html>
